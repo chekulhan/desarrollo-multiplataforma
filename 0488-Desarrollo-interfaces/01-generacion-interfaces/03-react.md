@@ -20,6 +20,23 @@ Mayo de 2013 – Facebook libera React como open source en la conferencia JSConf
 
 2017–2018 – La comunidad crece enormemente. Frameworks como Next.js (2016) se vuelven populares para apps completas con React.
 
+# Ejemplo
+React JS
+
+```jsx
+const Greeting = () => <h1>Hola Mundo 🌍</h1>
+```
+
+En móvil con React Native sería:
+
+```jsx
+import { Text } from 'react-native'
+
+const Greeting = () => <Text>Hola Mundo 🌍</Text>
+```
+
+
+
 # Implementación
 ## CRA v Vite
 

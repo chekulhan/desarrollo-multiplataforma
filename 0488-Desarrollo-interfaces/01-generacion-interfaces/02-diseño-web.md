@@ -1,20 +1,29 @@
-# Tipos de Diseño en Desarrollo Web
-## Diseño orientado al usuario
-Se enfoca en la experiencia del usuario, asegurando que la navegación sea intuitiva, accesible y eficiente. Se prioriza la usabilidad y la accesibilidad para diferentes dispositivos y capacidades.
+# Tipos de Diseño en Desarrollo Multiplataforma
 
-Ejemplo: Un portal de banca en línea que facilita la consulta de saldos y transferencias con una interfaz sencilla y clara.
+## Diseño orientado al usuario (UX)
+
+Se enfoca en la experiencia del usuario, asegurando que la navegación sea intuitiva, accesible y eficiente. En un contexto multiplataforma, esto implica diseñar interfaces responsivas que se adapten a diferentes dispositivos (ordenadores, móviles, tablets) y considerar aspectos como accesibilidad, velocidad de carga en redes móviles y facilidad de uso en pantallas táctiles.
+
+**Ejemplo**: Un portal de banca en línea que permite consultar saldos y transferencias con una interfaz clara, que se adapta tanto a la pantalla de un ordenador como a la de un teléfono móvil.
+
 
 ## Diseño orientado a objetivos
-Busca cumplir con un propósito específico, alineando la estructura y elementos de la web con las metas del negocio o proyecto. Se optimiza para conversiones, generación de leads o ventas.
+Busca cumplir con un propósito específico, alineando la estructura y elementos de la web con las metas del negocio o proyecto. En un entorno multiplataforma, los objetivos deben cumplirse de forma consistente en todos los dispositivos, optimizando la colocación de formularios, botones de acción (CTA - call to action) y flujos de conversión para pantallas grandes y pequeñas.
 
-Ejemplo: Una página de registro para un evento donde el formulario de inscripción y la llamada a la acción están bien posicionados para maximizar inscripciones.
+**Ejemplo**: Una página de registro para un evento cuyo formulario de inscripción y llamada a la acción están bien posicionados tanto en escritorio como en móviles, maximizando inscripciones en cualquier plataforma.
 
 ## Diseño orientado a la implementación
-Se enfoca en la viabilidad técnica del desarrollo web, asegurando que el diseño sea fácil de implementar, mantener y escalar. Se prioriza el uso de tecnologías eficientes y buenas prácticas de código.
+Se enfoca en la viabilidad técnica del desarrollo web, asegurando que el diseño sea fácil de implementar, mantener y escalar. En un enfoque multiplataforma, esto incluye el uso de componentes reutilizables, frameworks que permitan compartir código entre web y móvil (por ejemplo, React y React Native), así como la aplicación de buenas prácticas para garantizar compatibilidad y eficiencia en diferentes entornos.
 
-Ejemplo: Un sistema de gestión interna basado en componentes reutilizables de React, optimizado para actualizaciones rápidas y bajo consumo de recursos.
-En un buen diseño web, estos tres enfoques deben combinarse para lograr una experiencia de usuario óptima, cumplir con los objetivos del negocio y garantizar una implementación eficiente.
+**Ejemplo**: Un sistema de gestión interna construido con componentes de React que también se aprovechan en una aplicación móvil, optimizado para actualizaciones rápidas y bajo consumo de recursos.
 
+### Resumen
+
+- “Diseño centrado en el usuario”.
+
+- “Diseño orientado a objetivos de negocio”.
+
+- “Diseño orientado a la implementación técnica”.
 
 # Actividad: Comparar las siguientes páginas webs y comentar
 - Air BNB
