@@ -76,3 +76,42 @@ npm run preview
 
 CRA = fácil, pero viejo y lento.
 Vite = moderno, flexible, rápido.
+
+
+# Mi primer componente
+Vamos a crear un componente y incluirlo en App.jsx
+
+```jsx
+const Greeting = () => {
+
+    return (
+        <>
+            <h1>Hello from my component</h1>
+        </>
+    )
+}
+
+export default Greeting;
+```
+
+y lo incluimos en App.jsx:
+
+```jsx
+import Greeting from './components/Greeting.jsx'
+
+
+<Greeting />
+
+```
+
+## Actividades
+
+### Mi componente de presentación
+🎯 Objetivo
+
+Crear un componente React que muestre una tarjeta de presentación personal con:
+
+- Un nombre
+- Una imagen de perfil (puede ser un link de internet)
+- Una breve descripción
+- Un correo electrónico o dato de contacto
