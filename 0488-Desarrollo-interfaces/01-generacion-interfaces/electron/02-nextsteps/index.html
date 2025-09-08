@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini VS Code</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: monospace;
+    }
+    #editor {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+      outline: none;
+      font-size: 14px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <textarea id="editor" spellcheck="false"></textarea>
+  <script type="module" src="renderer.js"></script>
+</body>
+</html>
