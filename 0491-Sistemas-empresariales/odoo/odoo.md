@@ -1,6 +1,8 @@
 https://hub.docker.com/_/odoo
 
 
+Crear un directorio para posteriormente trabajar en ello: odoo-custom-addons
+
 ```bash
 docker-compose up -d
 docker compose up -d

@@ -1,0 +1,13 @@
+<odoo>
+    <record id="view_partner_form_custom" model="ir.ui.view">
+        <field name="name">res.partner.form.custom</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <!-- Add custom field after the Name field -->
+            <xpath expr="//field[@name='name']" position="after">
+                <field name="x_note" placeholder="Enter a note..."/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

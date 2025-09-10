@@ -17,9 +17,11 @@ services:
       - DB_USER=odoo
       - DB_PASSWORD=odoo
       - DB_PORT=5432
+      - ADDONS_PATH=/mnt/extra-addons,/usr/lib/python3/dist-packages/odoo/addons
     ports:
       - "8069:8069"
     volumes:
+      - ./odoo-custom-addons:/mnt/extra-addons    # <-- mount your local folder
       - odoo-data:/var/lib/odoo
     depends_on:
       - db
