@@ -20,6 +20,32 @@ Mayo de 2013 – Facebook libera React como open source en la conferencia JSConf
 
 2017–2018 – La comunidad crece enormemente. Frameworks como Next.js (2016) se vuelven populares para apps completas con React.
 
+
+# Requisitos
+1. **Node.js**
+
+    - React y Vite funcionan sobre Node.
+
+    - Necesitas una versión moderna:
+
+    - Node.js ≥ 18 recomendado (muchos proyectos también funcionan con 16, pero ya es viejo). Node v20 es mínimo de AWS Amplify
+
+    - Al instalar Node, también se instala npm (Node Package Manager), que sirve para instalar dependencias.
+
+2. **Gestor de paquetes (npm o yarn o pnpm)**
+
+    - npm viene incluido con Node.
+
+    - Opcionalmente puedes usar yarn o pnpm, que algunos prefieren por rendimiento.
+
+3. **Navegador moderno**
+
+    - Chrome, Edge, Firefox, Safari → para probar tu app.
+
+4. **Editor de código**
+
+    - Visual Studio Code (VS Code) es el más común y práctico para trabajar con React/Vite.
+
 # Ejemplo
 React JS
 
