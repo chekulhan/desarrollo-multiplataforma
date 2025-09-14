@@ -17,6 +17,19 @@ O dicho de otra forma (Jakob Nielson):
 - Tolerante a los errores
 - Satisfacción (y emoción) - agradable
 
+**The 5 Es of Usability**
+
+- Effective – Can users achieve their goals accurately and completely?
+
+- Efficient – Can they do it quickly, with minimal wasted effort or steps?
+
+- Engaging – Is the experience pleasant, intuitive, and motivating?
+
+- Error-tolerant – Does the system prevent errors, or help users recover easily?
+
+- Easy to learn – Can new users quickly understand and start using it without frustration?
+
+
 # Conceptos básicos y pautas
 - Los 10 principios heurísticos de la usabilidad de Jakob Nielsen
 - Diseñado para el mercado específico (target market)
