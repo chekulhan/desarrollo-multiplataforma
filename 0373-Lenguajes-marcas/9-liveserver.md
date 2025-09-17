@@ -3,7 +3,7 @@
 # Live Server
 Live Server es una extensión de Visual Studio Code (VS Code) que permite previsualizar tus proyectos web en tiempo real. Funciona creando un servidor local que refleja los cambios que realices en tus archivos HTML, CSS o JavaScript sin necesidad de actualizar la página manualmente en el navegador.
 
-![Live Server](../x-assets/UF1841/liveserver.png)
+![Live Server](../x-assets/0373/liveserver.png)
 
 ## ¿Cómo funciona Live Server?
 

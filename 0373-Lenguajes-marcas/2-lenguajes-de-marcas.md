@@ -6,12 +6,12 @@ No son lenguajes de programación como Java, Javascript, Python, C, C++, ...
 
 Un ejemplo de un lenguaje de marcas:
 
-![Lenguaje de Marcas ](../x-assets/UF1841/marcas.ex.png)
+![Lenguaje de Marcas ](../x-assets/0373/marcas.ex.png)
 
 # GML
 GML fue desarrollado en IBM entre 1969 y 1970 por Charles Goldfarb, Edward Mosher y Raymond Lorie (cuyas iniciales de apellido fueron usados por Goldfarb para crear el término GML). Las marcas incluyen información al documento relativa a parrafos, cabeceras, listas, tablas, etc. Dió lugar a SGML.
 
-![GML ](../x-assets/UF1841/gml.png)
+![GML ](../x-assets/0373/gml.png)
 
 # SGML
 
@@ -35,7 +35,7 @@ Sobre los años 2000, XML se convirtió en el estándar para intercambiar datos 
 
 XML fue un gran avance en la estructuración de datos para la web y sigue siendo una tecnología clave en muchos sistemas. Aunque ha sido reemplazado en parte por JSON, sigue siendo ampliamente utilizado en documentos estructurados y sistemas empresariales.
 
-![XML](../x-assets/UF1841/xml.ex.png)
+![XML](../x-assets/0373/xml.ex.png)
 
 # XHTML
 XHTML (Extensible HyperText Markup Language) es una versión más estricta y estructurada de HTML, basada en XML. Surgió como un intento de mejorar la calidad y coherencia del código web.
@@ -66,7 +66,7 @@ Desde su popularización, JSON ha sido adoptado en una gran variedad de aplicaci
 - Aplicaciones móviles: JSON es ampliamente utilizado para el intercambio de datos entre servidores y dispositivos móviles.
 - Bases de datos NoSQL: Muchas bases de datos modernas, como MongoDB y CouchDB, utilizan JSON para almacenar y gestionar datos.
 
-![JSON](../x-assets/UF1841/json.ex.png)
+![JSON](../x-assets/0373/json.ex.png)
 
 # Markdown
 Los principios de markdown se remontan a wikiwikiweb - se puede usar el sandbox de wikipedia para un simulacro.

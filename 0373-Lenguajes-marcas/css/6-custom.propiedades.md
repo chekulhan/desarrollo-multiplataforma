@@ -22,4 +22,4 @@ element {
 ## Actividad
 Usando 6-custom.propiedades.actividad.html, definir y aplicar las variables necesarias para que la página final parece a:
 
-![Respuesta](../../x-assets/UF1841/custom.propiedades.actividad.png)
+![Respuesta](../../x-assets/0373/custom.propiedades.actividad.png)

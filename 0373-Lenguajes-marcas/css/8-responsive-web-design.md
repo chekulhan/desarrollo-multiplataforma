@@ -4,7 +4,7 @@
 CSS proporciona diferentes tipos de unidades para definir tamaños, márgenes, rellenos y otras propiedades. Estas unidades se dividen en dos categorías: **absolutas** y **relativas**.
 
 
-![Relative vs Absolute](../x-assets/UF1841/css.relative.absolute.png)
+![Relative vs Absolute](../x-assets/0373/css.relative.absolute.png)
 
 ---
 

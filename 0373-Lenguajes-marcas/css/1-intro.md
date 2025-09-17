@@ -98,7 +98,7 @@ CSS (Cascading Style Sheets) es un lenguaje que permite dar estilo y formato a l
 
 
 
-![CSS](../../x-assets/UF1841/css.devtools.png)
+![CSS](../../x-assets/0373/css.devtools.png)
 
 # Actividad 1:
 ## Galeria de photos
@@ -132,7 +132,7 @@ Aplicar CSS propiedades a una aplicacion de galeria de fotos. Usar las fotos de 
 # Actividad 2:
 Con tus conocimientos hasta ahora de HTML y CSS, repasar para emular esta página:
 
-![BBC](../../x-assets/UF1841/bbc.ejemplo.png)
+![BBC](../../x-assets/0373/bbc.ejemplo.png)
 
 
 

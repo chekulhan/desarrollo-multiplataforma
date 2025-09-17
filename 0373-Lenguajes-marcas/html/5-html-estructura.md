@@ -1,7 +1,15 @@
 # Estructura
 
-## `<div>`:
-Una etiqueta de contenedor genérica utilizada para agrupar elementos sin ningún significado semántico. Se usa para aplicar estilos o estructurar el contenido de manera flexible.
+📝 Ventajas del uso de **etiquetas semánticas**
+
+- Accesibilidad: lectores de pantalla pueden identificar mejor el contenido.
+
+- SEO: Google y otros motores entienden mejor la estructura del sitio.
+
+- Mantenimiento: el código es más claro y organizado.
+
+- Compatibilidad futura: HTML5 está diseñado para ser semántico y duradero.
+
 
 ## `<main>`:
 Representa el contenido principal de la página. Contiene la información central que es relevante para el propósito principal del documento y debe ser único por página.
@@ -24,11 +32,15 @@ Define la cabecera de una página o sección. Generalmente incluye el logo, el t
 ## `<footer>`:
 Representa el pie de página de un documento o sección. Usualmente contiene información de contacto, derechos de autor, enlaces a políticas, etc.
 
-![HTML Estructura](../../x-assets/UF1841/html.estructura.png)
+
+## `<div>`:
+No es una etiqueta semantica. Una etiqueta de contenedor genérica utilizada para agrupar elementos sin ningún significado semántico. Se usa para aplicar estilos o estructurar el contenido de manera flexible.
+
+![HTML Estructura](../../x-assets/0373/html.estructura.png)
 
 **Actividad 1:**
 
-![HTML Estructura Actividad](../../x-assets/UF1841/html.estructura.actividad.png)
+![HTML Estructura Actividad](../../x-assets/0373/html.estructura.actividad.png)
 
 Usar la siguiente CSS para aplicar estilos
 ```css

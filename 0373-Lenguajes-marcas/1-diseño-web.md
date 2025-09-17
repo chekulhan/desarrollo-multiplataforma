@@ -29,7 +29,7 @@ En un buen diseño web, estos tres enfoques deben combinarse para lograr una exp
 - https://www.berkshirehathaway.com/
 
 # Proceso de Diseño Web
-[Download PDF](../x-assets/UF1841/proceso-diseno-pagina-web.pdf)
+[Download PDF](../x-assets/0373/proceso-diseno-pagina-web.pdf)
 
 ## Ejemplos:
 - https://duck.design/effective-website-design-process/
@@ -47,7 +47,7 @@ En estos ejemplos, el valor diferencial está en la rapidez de entrega o en la d
 ## Onliness Statement
 El Onliness Statement es un concepto desarrollado por Marty Neumeier en su libro Zag. Es una declaración que define lo que hace que una marca sea única, sin comparación directa con otras.
 
-![Onliness Statement](../x-assets/UF1841/onliness.statement.png)
+![Onliness Statement](../x-assets/0373/onliness.statement.png)
 
 Se construye con la siguiente estructura:
 
@@ -73,7 +73,7 @@ Los wireframes pueden ser creados a mano o con herramientas como Figma, Adobe XD
 # Actividad FIGMA wireframe
 Vas a copiar una página ewb que te guste, y diseñar un wireframe usando FIGMA.
 
-![Wireframe](../x-assets/UF1841/figma.wireframe.png)
+![Wireframe](../x-assets/0373/figma.wireframe.png)
 
 Presentar tu wireframe a la clase, considerando el USP o Onliness statement.
 
