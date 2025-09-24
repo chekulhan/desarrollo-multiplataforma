@@ -165,7 +165,7 @@ Ejemplo de uso:
 ## Actividad
 **Contexto:**
 
-Imagina que eres un desarrollador web en una universidad. El sistema de gestión de estudiantes necesita un formulario para que los profesores o administradores puedan registrar nuevos estudiantes en el sistema. Este formulario debe incluir varios campos que permitan recopilar información relevante sobre los estudiantes, como su nombre, edad, género, carrera, y otros detalles personales.
+Imagina que eres un desarrollador web en un centro de formación profesional. El sistema de gestión de estudiantes necesita un formulario para que los profesores o administradores puedan registrar nuevos estudiantes en el sistema. Este formulario debe incluir varios campos que permitan recopilar información relevante sobre los estudiantes, como su nombre, edad, género, carrera, y otros detalles personales.
 
 **Objetivo:**
 
