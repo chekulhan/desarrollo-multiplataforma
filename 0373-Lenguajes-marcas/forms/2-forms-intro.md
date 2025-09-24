@@ -80,6 +80,12 @@ Ejemplo con POST:
 </form>
 ```
 
+Usar https://echo.free.beeceptor.com o https://httpbin.org/post para simular un POST:
+
+```html
+<form action="https://echo.free.beeceptor.com" method="POST">
+```
+
 ## Elementos más comunos de entrada
 
 1. ```<input>```
