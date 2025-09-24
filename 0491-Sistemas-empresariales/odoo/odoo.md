@@ -22,3 +22,7 @@ Master Password: q3wn-br3p-eg9g
 admin@admin.com
 password
 
+
+# PgAdmin
+http://localhost:5050/
+
