@@ -46,6 +46,8 @@ INSERT INTO biblioteca.prestamos (id_socio, id_libro, fecha_prestamo, fecha_devo
 
 ```
 
+![Funcion](../../x-assets/0491/erd.png)
+
 ---
 ## PARTE 1
 
@@ -59,11 +61,12 @@ Llevar a cabo lo siguiente:
 3. Queremos saber qué libros han sido prestados y cuáles no.
 
 4. Queremos saber qué libros estan actualmente prestados y a qué socio están prestados. 
-    Crear una vista llamada "vw_libros_prestados" para esta consulta, dandole permisos de lectura a la aplicacion de Python para sacar los informes.
+    **Avanzado**: Crear una vista llamada "vw_libros_prestados" para esta consulta, dandole permisos de lectura a la aplicacion de Python para sacar los informes.
 
 5. Añadir unos nuevos libros a la tabla libros. Escribir el código SQL.
    'Ana Lopez' ha prestado dos libros más. Escribir el código SQL para insertar su prestámo.
-   Hoy, "Lucía Gómez" ha devuleto su libro	"Don Quijote de la Mancha". Escribir el código SQL.
+   Hoy, "Lucía Gómez" ha devuelto su libro	"Don Quijote de la Mancha". Escribir el código SQL.
+   Confirmar que puedes llevar a cabo los comandos de DML (SELECT, INSERT, UPDATE y DELETE) sin pensar!
 
 6.  Queremos saber cuántos libros prestados tiene cada socio actualmente. Si el valor es mayor a 3, mostrar los resultados. Si es menos de 3, no hay ningun problema, asi que no les mostramos.
     De nuevo, Crear una vista llamada "vw_libros_prestados_importantes" para esta consulta, dandole permisos de lectura a la aplicacion de Python para sacar los informes.
