@@ -3,7 +3,7 @@
 [Electron](https://www.electronjs.org/)
 
 ```bash
-npm install -y
+npm init -y
 npm install electron
 npm install --save-dev electronmon
 ```
@@ -38,4 +38,29 @@ Fijaos en type:module, main:main.js y los comandos de dev y start:
 
 ```bash
 npm run dev
+```
+
+
+En las primeras actividades (01-introduccion), vamos a integrar HTML directamente en una aplicación de Electron.
+
+
+## Tips para desarrollar
+
+### Open DevTools in Electron
+
+
+When the Electron window opens, press:
+
+- Windows/Linux: Ctrl + Shift + I
+
+- Mac: Cmd + Option + I
+
+Or in the main createWindow() process:
+
+```javascript
+
+  win.loadFile('index.html');
+
+  // Open DevTools automatically
+  win.webContents.openDevTools();
 ```
