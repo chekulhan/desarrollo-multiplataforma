@@ -1,3 +1,10 @@
+# Actividades
+Usando la herramienta de PGAdmin, crear las tablas SIN usar el código. Usar la herramienta gráfica. Usar el código para ayudarte en definir las tablas.
+
+Recordar que hay que arancar pgadmin y postgres contenedores, asi que puedes usar el mismo docker-compose de odoo.
+
+
+
 ```sql
 CREATE SCHEMA IF NOT EXISTS biblioteca;
 
@@ -73,8 +80,10 @@ Llevar a cabo lo siguiente:
 
 
 ## PARTE 2 
+**Echar un vistazo al 06-db.functions.md para ayudarte.**
 
 1. Aprovechando una funcion, crear una consulta para mostrar el siguiente resultado. La última columna mostrará el total de libros que tiene prestado cada socio. 
+
 
 ![Funcion](../../x-assets/0491/librosprestados.png)
 
