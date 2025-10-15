@@ -48,15 +48,9 @@
         <p>Este es el contenido adicional que se puede expandir.</p>
     </details>
 
-    <!-- Ejemplo de <summary> -->
-    <h2>6. Etiqueta &lt;summary&gt;</h2>
-    <details>
-        <summary>Haz clic para ver más</summary>
-        <p>Este es el contenido oculto que se muestra cuando se hace clic.</p>
-    </details>
 
     <!-- Ejemplo de <datalist> -->
-    <h2>7. Etiqueta &lt;datalist&gt;</h2>
+    <h2>6. Etiqueta &lt;datalist&gt;</h2>
     <input list="navegadores" name="navegador" id="navegador">
     <datalist id="navegadores">
         <option value="Chrome">
@@ -67,7 +61,7 @@
     </datalist>
 
     <!-- Ejemplo de <output> -->
-    <h2>8. Etiqueta &lt;output&gt;</h2>
+    <h2>7. Etiqueta &lt;output&gt;</h2>
     <form oninput="resultado.value=parseInt(a.value)+parseInt(b.value)">
         <input type="number" id="a" value="0">
         +
@@ -77,20 +71,20 @@
     </form>
 
     <!-- Ejemplo de <time> -->
-    <h2>9. Etiqueta &lt;time&gt;</h2>
+    <h2>8. Etiqueta &lt;time&gt;</h2>
     <p>El evento será celebrado el <time datetime="2025-02-14T15:00:00">14 de febrero de 2025</time>.</p>
 
     <!-- Ejemplo de <wbr> -->
-    <h2>10. Etiqueta &lt;wbr&gt;</h2>
+    <h2>9. Etiqueta &lt;wbr&gt;</h2>
     <p>Aquí hay una palabra muylargaquequizánecesiteunquiebremuylargaquequizánecesiteunquiebremuylargaquequizánecesiteunquiebre<wbr>aquí.</p>
 
     <!-- Ejemplo de <meter> -->
-    <h2>11. Etiqueta &lt;meter&gt;</h2>
+    <h2>10. Etiqueta &lt;meter&gt;</h2>
     <label for="fuel">Fuel level:</label>
     <meter id="fuel" min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
 
     <!-- Ejemplo de <fieldset> -->
-    <h2>12. Etiqueta &lt;fieldset&gt;</h2>
+    <h2>11. Etiqueta &lt;fieldset&gt;</h2>
     <fieldset>
         <legend>Choose your favorite monster</legend>
         
@@ -105,7 +99,7 @@
     </fieldset>
 
      <!-- Ejemplo de <search> -->
-    <h2>13. Etiqueta &lt;search&gt;</h2>
+    <h2>12. Etiqueta &lt;search&gt;</h2>
 
     <h1>Movie website</h1>
     <search>
@@ -115,6 +109,16 @@
         <button type="submit">Search</button>
         </form>
     </search>
+
+    <h2>13. Etiqueta &lt;svg&gt;</h2>
+    <p></p>
+    <svg width="100" height="100">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+    </svg>
+
+    <h2>14. Etiqueta &lt;progress&gt;</h2>
+    <label for="progressBar">Descarga en curso:</label>
+    <progress id="progressBar" value="70" max="100">70%</progress>
       
 </body>
 </html>
