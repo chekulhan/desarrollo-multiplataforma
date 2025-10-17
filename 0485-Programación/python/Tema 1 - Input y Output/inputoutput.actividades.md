@@ -1,4 +1,4 @@
-"""
+
 # Actividad 1: ZARA
 En la tienda de Zara, el precio de una camiseta es de 10,50 € y el precio de un pantalón es de 3,00 €.
 
@@ -15,7 +15,7 @@ Ejemplo de ejecución:
 ¿Cuántas camisetas quieres comprar? 2
 ¿Cuántos pantalones quieres comprar? 3
 El total de la compra es: 30.00 €
-"""
+
 
 
 # Actividad 2: AMERICANO/A
@@ -25,10 +25,25 @@ Está acostumbrado a usar la escala Fahrenheit (°F) para medir la temperatura, 
 Ayudale con un programa de Python.
 ---
 
+# Actividad 3: 
+
+COMO un alumno de primaria, QUIERO calcular el área de un rectangulo PARA QUE no tenga que estudiar
+
+- El usuario introduce la base y la altura (input)
+- Calcular el área (proceso)
+- Mostrar el resultado al usuario (output)
+
+# Actividad 4: 
+ 
+COMO un alumno de secundaria,
+QUIERO calcular cuánta agua cabe en mi piscina,
+PARA NO tener que adivinarlo ni estudiarlo.
+
 
 # Respuestas
 
 # Zara actividad
+```python
 camiseta = 10.5
 pantalon = 3.0
 
@@ -43,7 +58,7 @@ total_order = total_shirts + total_pants
 # Mostrar con 2 decimales
 print(f"El total de la compra es: {total_order:.2f} €")
 
-
+```
 
 # formulario en colab para convertir Celsius a Fahrenheit y viceversa
 # @title Calculador de Productos {"run":"auto","form-width":"200px","display-mode":"form"}
@@ -56,12 +71,11 @@ total = camiseta + pantalon + corbata
 print(f"El cost total es {total:.2f} euros") # floating point - punto flotante . = los decimales, 2 = 2 decimales, f = floating point numero
 
 # version para VS Code
-"""
-Este programa convierte Celsius a Fahrenheit y viceversa.
+Programa convierte Celsius a Fahrenheit y viceversa.
 
 Ejemplo: (50°F - 32) x 0.5556 = 10°C
-"""
 
+```python
 accion = input("Para convertir de Fahrenheit a Celsius, teclear 'c'. Para Celsius a Fahrenheit, teclear 'f': ")
 
 if accion == "f":
@@ -77,11 +91,11 @@ elif accion == "c":
 
 else:
     print("Lo siento. Tienes que introducir 'c' o 'f'")
-
+```
 
 
 # Kilos a libras y viceversa
-
+```python
 peso = int(input('Cuánto pesas? '))
 unidad = input('En (kg) o (lb)? ')
 if unidad.lower() == "kg":
@@ -91,7 +105,7 @@ else:
     conversion = peso / 2.205
     print(f'your weight in kilograms is {conversion}kg')
 
-    
+```
     
     
     

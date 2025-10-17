@@ -50,7 +50,7 @@ print("datetime.now():", now)
 # Custom formatting
 print("strftime:", now.strftime("%Y-%m-%d %H:%M:%S"))
 
---------
+
 
 # Respuestas:
 import platform
