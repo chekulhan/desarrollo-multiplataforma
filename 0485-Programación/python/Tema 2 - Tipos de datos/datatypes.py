@@ -10,6 +10,9 @@ print(type(x))
 a = 433.32
 b = 0.2121
 print("Completed in %d %.2f" %(a,b))  # d = int, f = float, s = str
+# convertir float a int
+c = int(a) # no redondea, se convierte explicitamente al tipo de dato 
+print(c, type(c)) 
 
 # Formatear con f - a partir de Python 3.6 preferible
 a = 32.5432
@@ -20,8 +23,10 @@ print(f"Completed in {a:.0f} and {b:.2f}")
 # precision
 x = 0.12345678912345678912345  # hasta 15 o 17 decimales
 print(x)
+# rondear
+print(round(x, 2))
 
-#representación con e
+#representación con e - notación científica, también conocida como notación exponencial
 y = 5.5e2  # equivalente a 5.5 * 10^2, or 550.0
 small_number = 4.23e-5  # This is equivalent to 4.23 * 10^-5, or 0.0000423
 print(f"The small number in decimal form is: {small_number:.12f}")
@@ -46,6 +51,16 @@ b = "hello"
 print(a is b)
 print(a == b)
 
+# cuidado con is
+a = 500 # ¿si cambias los dos 500 por 200, que ocurre?
+b = 500
+
+a is b
+print(id(a))
+print(id(b))
+
+
+
 # bool
 x = True
 if x:
@@ -60,6 +75,10 @@ print(bool(10))
 print(bool("Hola"))
 print(bool(""))
 
+x = True
+if x:  # no hace falta decir if x == True:
+  print("X tiene valor")
+
 
 # NONE type
 x = None
@@ -69,6 +88,31 @@ if x:
 else:
     print("No tiene nada")
 
+
+
+## Actividades
+# Aplicación del banco
+COMO un usuario del banco, 
+QUIERO introducir mi nombre del usuario y PIN de 4 numeros
+PARA QUE pueda acceder a mi cuenta bancaria
+
+- mostrar un mensaje de bienvenido del banco
+- almacenar el usuario y PIN en unas variables (constantes) al principio del programa
+- comparar lo que ha intriducido el usuario con los que estan definido en el program
+- mostrar información si ha iniciado sesion correctamente en el banco
+
+# Aplicación el alumnado
+COMO un profesor
+QUIERO introducir 5 notas de los alumnos y ver la media, minimo y máximo nota
+PARA ahorrar tiempo en lugar de hacer los cálculos a mano
+
+# Aplicación de seguridad
+COMO un usuario del FBI, 
+QUIERO mostrar información acorde con el nivel de seguridad del usuario
+PARA proporcionar la información pertinente al nivel del usuario
+
+Por ejemplo, usuario nivel 1 puede ver document A (alta confidencialidad), usuario nivel 2 puede ver un documento B (media confidencialidad)
+y todos los demás usuarios pueden solo ver documentos abiertos.
 
 # variables en una linea
 x, y, z = 5, 10, "Hello"
