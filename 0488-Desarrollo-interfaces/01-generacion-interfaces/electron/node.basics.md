@@ -113,7 +113,7 @@ Con un retraso, ya que vienen poco a poco a la fiesta, mostrar "Hola {nombre}":
 Usando setInterval y clearInterval, crear una function arrow para contar el lanzamiento de un cohete, desde 10, cada , hasta 0. Cuando llega a 0, iniciar un Blast Off!!!!
 
 ---
-
+```js
 const greet = (nombre) => {
     console.log(`Hola ${nombre}`);
 }
@@ -144,7 +144,8 @@ const countdown = setInterval(()=> {
         tiempo--;
     }
     else {
-        console.log("Blast Off"!);
+        console.log("Blast Off");
         clearInterval(countdown);
     }
 }, 1000);
+```
