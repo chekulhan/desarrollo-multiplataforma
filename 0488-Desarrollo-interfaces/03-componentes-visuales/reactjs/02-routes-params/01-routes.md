@@ -229,6 +229,39 @@ const MyComponent = () => {
 ```
 
 
+# Electron
+En Electron, el enrutamiento es un poco diferente. En lugar de usar BrowserRouter, usaremos HashRouter.
+
+En index.jsx:
+```
+import { HashRouter as Router } from 'react-router-dom';
+```
+Ahora tus enlaces internos y el menú de Electron funcionarán siempre, sin importar si estás en localhost o en el build final.
+
+
+```jsx
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import App from './App.jsx'
+import { HashRouter as Router } from "react-router-dom";
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <Router>
+      <App />
+    </Router>
+    
+  </StrictMode>,
+)
+```
+
+En Electron, para abrir cualquier ruta:
+```javascript
+win.loadURL('http://localhost:5173/#/aboutus'); // desarrollo
+win.loadFile('dist/index.html', { hash: 'aboutus' }); // producción
+
+```
 
 
 **Respuestas**

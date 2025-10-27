@@ -23,7 +23,7 @@ Los elementos con `role` (como `quit`, `copy`, `undo`) **manejan automáticament
 
 Esto te evita escribir funciones `click` repetitivas.
 
-![Electron menu roles](../../../../../x-assets/0488/electron-menu-1.png)
+![Electron menu roles](../../../../x-assets/0488/electron-menu-1.png)
 
 ---
 

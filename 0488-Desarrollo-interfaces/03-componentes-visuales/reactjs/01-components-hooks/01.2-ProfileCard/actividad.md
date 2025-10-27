@@ -1,6 +1,6 @@
 # Actividad
 
-![Profile Card ](../../../../../x-assets/UF1842/react.ProfileCard.png)
+![Profile Card ](../../../../../x-assets/0488/react.ProfileCard.png)
 
 Usando ProfileCard.module.css, crear un componente para mostrar dos perfiles en la página principal. 
 
