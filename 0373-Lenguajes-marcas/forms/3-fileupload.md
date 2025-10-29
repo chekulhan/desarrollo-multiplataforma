@@ -17,7 +17,13 @@ Métodos:
 - files: Propiedad que devuelve una lista de archivos seleccionados (un objeto FileList).
 - value: Propiedad que contiene la ruta del archivo seleccionado (en navegadores modernos, este valor no muestra la ruta completa por razones de seguridad).
 
-**Uso de FileReader**
+## Actividad
+
+![Actividad Upload](../../x-assets/0373/fileupload1.png)
+![Actividad Upload](../../x-assets/0373/fileupload2.png)
+
+
+## Uso de FileReader
 La API FileReader es una herramienta poderosa en JavaScript que permite a los desarrolladores leer el contenido de los archivos seleccionados de forma asíncrona. Esta API facilita la interacción con los archivos en el lado del cliente sin necesidad de enviarlos al servidor.
 
 **Métodos Comunes de FileReader**
@@ -83,4 +89,17 @@ fileInput.addEventListener('change', function(event) {
     const audio = new Audio(fileURL);
     audio.play(); // Play the selected audio file
 });
+```
+
+
+# Respuesta
+```html
+
+// Display file info
+infoDiv.innerHTML = `
+<p><strong>File Name:</strong> ${file.name}</p>
+<p><strong>File Size:</strong> ${(file.size / 1024).toFixed(2)} KB</p>
+<p style="color: green;"><strong>Success! PDF is ready.</strong></p>
+`;
+
 ```
