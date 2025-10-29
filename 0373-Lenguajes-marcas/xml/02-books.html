@@ -46,7 +46,7 @@
 
         const xml = document.getElementById("xmlData").textContent.trim();
         console.log(xml);
-        const parser = new DOMParser(); //
+        const parser = new DOMParser(); 
         const xmlDoc = parser.parseFromString(xml, "text/xml");
 
         const titles = xmlDoc.getElementsByTagName("title");
