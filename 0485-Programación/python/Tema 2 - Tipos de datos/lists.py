@@ -2,24 +2,43 @@
 # Actividades:
 
 ## Actividad: Registro de clase
-
+"""
 Este programa sirve para registrar cuántos alumnos están presentes en clase.
 - Primero, se crea una lista con los nombres de los alumnos (nombres).
 - Luego, el programa recorre esa lista uno por uno y pregunta si cada alumno ha venido (y para sí, n para no).
 - Cada vez que la respuesta es y, se suma 1 al contador (counter).
 - Al final, el programa muestra en pantalla cuántos alumnos están presentes hoy.
+"""
 
 ## Actividad: Cálculo e media de la clase
-Teniendo las siguientes notas de una evaluación de clase, ayudar el profesor con un programa para sacar la nota más baja, más alta y la media, 
+# Teniendo las siguientes notas de una evaluación de clase, ayudar el profesor con un programa para sacar la nota más baja, más alta y la media, 
 notas = [6, 4, 1, 10, 10, 7, 4]
 
 ## Actividad: Lengua
-Los alumnos quieren saber si la letra es un vocal o no. Imprimir el booleano True si es un vocal y False si no lo es.
+# Los alumnos quieren saber si la letra es un vocal o no. Imprimir el booleano True si es un vocal y False si no lo es.
   
 letras = ["a", "b", "e", "f", "o", "x", "c"]
 
+## Actividad: Empleabilidad
+# Hay una lista de años de experiencia de los candidatos
 
--------
+experiencias = [1, 5, 3, 2, 7, 4, 3, 6, 2, 5]
+# crear una nueva lista de candidatos, con los candidatos con 3 años o más de experiencia
+# Avanzado: ¿qué candidatos tienen experience impar (1, 3, 5, ...)?
+
+
+# Aqui tienes las habilidades requiridos:
+skills = [
+    "Python", "Excel", "Communication", "Java", "SQL",
+    "Project Management", "Python", "JavaScript", "Excel", "Leadership"
+]
+
+# Preguntar al usuario por su habilidad (skill). Si esta en la lista, 
+# dile que ha sido seleccionado para continuar en el proceso de selección
+# Si no, el contrario.
+
+
+# -------
 
 nombres= ['Arturo','Julio','Dani']
 
