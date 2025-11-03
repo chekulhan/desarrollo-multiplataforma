@@ -88,3 +88,4 @@ for w in b:
     if not w.isnumeric():
         print(w)
 
+
