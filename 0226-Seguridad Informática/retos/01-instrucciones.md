@@ -1,6 +1,13 @@
 # Reto - Seguridad Informática
 Eres el analista de seguridad contratado por un cliente que reportó actividad sospechosa en su servidor web. Tu misión es revisar el fichero access.log proporcionado, identificar y documentar cualquier indicio de ataque o mala configuración.
 
+grep es un comando de Linux/Unix cuyo nombre viene de “Global Regular Expression Print”.
+En otras palabras, grep busca texto que coincida con un patrón dentro de archivos o entradas y muestra las líneas donde aparece.
+
+- Global → busca en todo el archivo o entrada.
+- Regular Expression → el patrón que defines puede ser una expresión regular (aunque también puede ser texto literal con -F). OJO - en esta actividad, no estamos usando expresiones regulares.
+- Print → imprime las líneas que coinciden con el patrón.
+
 Usando comandos de grep:
 ```bash
 grep -i  --line-number "Hello" /var/log/app.log
@@ -16,7 +23,7 @@ grep -F -e "hello" -e "goodbye" access.log
 
 
 # Instrucciones
-Usar wget para descargar el archivo y empezar a analizar.
+Usar wget para descargar el archivo y empezar a analizar. IMPORTANTE! Confirmar que has seleccionado RAW en github para descargar el archivo.
 
 # Ataques o posibles 
 1. Ha habida múltiples POSTS al mismo endpoint - un ataque 'brute force'
