@@ -25,7 +25,7 @@ Separar nombre_completo en variables nombre y completo.
 
 ## Actividad 4 (avanzado)
 ```python
-s = "    122,Python,es,64,un,777,lenguaje,222,de,55,66,programación  "
+s = "XXXXXHOY;donostian;$;TARDE;bizi;%;IDEAL;1;5;naiz;2;LEER;LIBROXXXXX"
 ```
 
-Queremos quitar los numeros y espacios y solo mostrar el texto.
+Queremos quitar todo excepto las palabras en lowercase, por ejemplo: donostian bizi naiz, y presentarles al final : "Donostian bizi naiz."

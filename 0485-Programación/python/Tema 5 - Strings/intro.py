@@ -84,8 +84,12 @@ a = s.strip()
 b = a.split(",")
 print(b)
 
+result = []
 for w in b:
     if not w.isnumeric():
         print(w)
+        result.append(w)
+    
+print(" ".join(result))
 
 

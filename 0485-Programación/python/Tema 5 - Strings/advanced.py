@@ -31,4 +31,4 @@ log_data = """
 # Failed Logins: {'janedoe': 1}
 # Unauthorized Access Attempts: [{'timestamp': '2024-11-24 10:22:15', 'status': 'ERROR', 'username': 'johndoe', 'action': 'attempted unauthorized access'}]
 # Si ha habido muchos 'failed to login' en menos de un minuto, mostrar un mensaje.
-# Usar functions
+
