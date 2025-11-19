@@ -27,6 +27,7 @@ Propósitos:
 </head>
 ```
 
+
 # Refresh
 
 Crear un página con un mensaje de "Under Maintenance". Después de 10 segundos, deberia redirigir el usuario a otra página:
@@ -34,6 +35,36 @@ Crear un página con un mensaje de "Under Maintenance". Después de 10 segundos,
 ```html
 <meta http-equiv="refresh" content="X;url=https://example.com/home">
 ```
+
+# Viewport
+
+Primero, mostramos una página con y sin metadatos de viewport.
+
+```css
+div {
+  height: 50%; /* 50% of parent element */
+}
+
+div {
+  height: 50vh; /* 50% of the visible screen */
+}
+```
+
+Segundo, jugamos con los valores de vh y vw. Creamos un div para mostrar el uso de vh (como porcentaje del viewport). Perfecto para landing pages.
+
+¿Qué ocurre si quitas el margin y padding del body?
+
+```css
+body {
+    margin:0;
+    padding:0;
+}
+.box {
+    height: 100vh; /* porcentaje */
+    background-color: green;
+}
+```
+
 
 # Charset
 Unicode es un sistema de codificación universal que asigna un número único a cada carácter de todos los idiomas del mundo, incluyendo letras, símbolos, emojis, etc.
