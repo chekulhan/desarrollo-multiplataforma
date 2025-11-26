@@ -36,6 +36,47 @@ while i < 6:
   print(i)
   
 
+# Actividades
+"""
+Tarea 1:
+Preguntar al usuario, las veces que sean necesarias, para la contraseña correcta, que es 'password'.
+En cuanto lo introduzca correctamente, imprimir un mensaje Acceso 'concedido'.
+
+Tarea 2:
+COMO un estudiante de matemáticas, QUIERO imprimir todos los números de 50 a 10.
+
+Tarea 3:
+COMO un estudiante de matemáticas, QUIERO imprimir todos los números de 0 a 99
+excluyendo (10, 20, 30, 40, 50, 60, 70, 80, 90).
+
+Tarea 4:
+Pide al usuario que intriduzca un número positivo.
+Mientras escriba un número negativo o cero, sigue pidiéndolo.
+Cuando finalmente escriba uno positivo, muestra: "¡Eskerrik Asko!".
+
+
+Tarea 5:
+Queremos imprimir lo siguiente en la pantalla:
+*
+**
+***
+****
+*****
+******
+
+Modificarlo para imprimir:
+*
+**
+***
+****
+*****
+******
+*****
+****
+***
+**
+*
+"""
 
 # j = 1
 # while j<=5:
