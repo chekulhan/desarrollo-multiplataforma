@@ -2,6 +2,13 @@
 # ¿Qué son las animaciones en CSS?
 Las animaciones en CSS te permiten cambiar la apariencia de un elemento a lo largo del tiempo. Puedes hacer que los elementos se muevan, se desvanezcan, crezcan o cambien de color de manera suave.
 
+Stop Motion
+https://www.youtube.com/watch?v=p5SygzMSLhM
+
+Key frames
+https://www.youtube.com/watch?v=seAx5WnCZPI
+
+
 Los keyframes son como un mapa para tu animación. Le dicen al navegador qué estilos aplicar en diferentes momentos
 
 ```css
@@ -50,7 +57,8 @@ Agregas la animación a un elemento en tu CSS. Por ejemplo:
 - Usa propiedades de animación para controlar cómo y cuándo se reproduce la animación.
 - Aplica la animación a un elemento para ver la animación en acción.
 
-## Propeiedad de translate
+## Propiedad de translate
+La aceleración por GPU fue un cambio clave: las transformaciones se ejecutan en la tarjeta gráfica en lugar del CPU, haciendo que las animaciones sean mucho más suaves, incluso si hay varios elementos moviéndose o efectos complejos.
 
 1. Translate (trasladar)
 La función translate mueve un elemento desde su posición original.
@@ -111,4 +119,65 @@ Puedes combinar múltiples funciones de transformación en una sola propiedad tr
 
 ```css
 transform: translate(50px, 100px) rotate(45deg) scale(1.5);
+```
+
+| Acción de `transform`       | Descripción                                                   | Ejemplo CSS                        |
+|------------------------------|---------------------------------------------------------------|-----------------------------------|
+| **translate(x, y)**          | Mueve un elemento en los ejes horizontal (x) y vertical (y).  | `transform: translate(100px, 50px);` |
+| **translateX(x)**            | Mueve solo en el eje horizontal.                              | `transform: translateX(100px);`  |
+| **translateY(y)**            | Mueve solo en el eje vertical.                                | `transform: translateY(50px);`   |
+| **translateZ(z)**            | Mueve en el eje Z (profundidad 3D).                           | `transform: translateZ(50px);`   |
+| **translate3d(x, y, z)**     | Mueve en 3D combinando X, Y y Z.                              | `transform: translate3d(100px, 50px, 20px);` |
+| **rotate(angle)**            | Rota el elemento en 2D alrededor de su centro.                | `transform: rotate(45deg);`      |
+| **rotateX(angle)**           | Rota el elemento alrededor del eje X (3D).                    | `transform: rotateX(45deg);`     |
+| **rotateY(angle)**           | Rota el elemento alrededor del eje Y (3D).                    | `transform: rotateY(45deg);`     |
+| **rotateZ(angle)**           | Rota el elemento alrededor del eje Z (3D, equivalente a rotate). | `transform: rotateZ(45deg);`     |
+| **scale(factor)**            | Escala el tamaño del elemento uniformemente.                  | `transform: scale(1.5);`         |
+| **scaleX(factor)**           | Escala solo en horizontal.                                    | `transform: scaleX(2);`          |
+| **scaleY(factor)**           | Escala solo en vertical.                                      | `transform: scaleY(0.5);`        |
+| **scale3d(x, y, z)**         | Escala en los tres ejes.                                      | `transform: scale3d(1, 2, 1);`   |
+| **skew(x-angle, y-angle)**   | Inclina el elemento en X y Y.                                  | `transform: skew(20deg, 10deg);` |
+| **skewX(x-angle)**           | Inclina solo en X.                                            | `transform: skewX(20deg);`       |
+| **skewY(y-angle)**           | Inclina solo en Y.                                            | `transform: skewY(10deg);`       |
+| **matrix(a, b, c, d, e, f)** | Transformación combinada 2D con matriz personalizada.        | `transform: matrix(1, 0, 0, 1, 50, 50);` |
+| **perspective(n)**           | Define la profundidad para efectos 3D.                        | `transform: perspective(500px) rotateY(45deg);` |
+
+
+
+## Demo de clas
+
+```css
+<style>
+    .box {
+        opacity: 0;
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        position: relative;
+        animation: fadeIn 2s forwards, moveBox 3s infinite alternate
+    }
+
+
+    @keyframes fadeIn {
+        to {
+            opacity: 1;
+        }
+    }
+    
+    @keyframes moveBox {
+        0% {
+            left: 0;
+            background-color: #3498db;
+        }
+        50% {
+        left: 200px;
+        background-color: #2ecc71;
+        }
+        100% {
+            left: 0;
+            background-color: #3498db;
+            }
+    }
+
+</style>
 ```
