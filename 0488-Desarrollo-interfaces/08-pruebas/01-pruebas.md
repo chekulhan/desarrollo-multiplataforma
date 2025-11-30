@@ -73,6 +73,9 @@
 
 
 # 🔹 Metodología TDD (Test-Driven Development)
+
+La metodologia fue desarrallado en 1999 en el movimiento de Extreme Programming.
+
 El TDD sigue un ciclo de tres pasos clave:
 
 1️⃣ Escribir una prueba 📝
@@ -93,6 +96,30 @@ Se optimiza el diseño y se eliminan redundancias.
 
 🔄 Este ciclo se repite hasta completar la funcionalidad.
 
+![TDD Fases](../../x-assets/0488/tdd.webp)
+
+![TDD](../../x-assets/0488/javascript.tdd.png)
+
+
+### Actividad 1
+
+Título: Categorizar un teléfono según el número de apps instaladas
+
+**COMO** usuario de un teléfono móvil,
+
+**QUIERO** que el software de mi teléfono me indique si tengo pocas, moderadas o muchas apps ejecutando,
+
+**PARA QUE** pueda entender rápidamente si mi teléfono está poco, moderadamente o muy utilizado.
+
+**Criterios de Aceptación**
+
+- Si el teléfono tiene 0 apps, debe devolver "Teléfono vacío".
+
+- Si el teléfono tiene 1 a 5 apps, debe devolver "Pocas apps".
+
+- Si el teléfono tiene 6 a 10 apps, debe devolver "Apps moderadas".
+
+- Si el teléfono tiene más de 10 apps, debe devolver "Muchas apps".
 
 
 ## Jest
