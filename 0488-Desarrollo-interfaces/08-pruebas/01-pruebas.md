@@ -42,6 +42,9 @@
 
 **Herramientas**: JMeter, Locust, k6.  
 
+![Performance](../../x-assets/0488/performance-test.png)
+
+
 ## 7. Pruebas de carga (Load Tests)
 **Qué son**: Verifican el comportamiento del sistema bajo una cantidad específica de usuarios o solicitudes.  
 
@@ -55,6 +58,10 @@
 **Ejemplo**: Probar qué pasa cuando el servidor recibe el doble de tráfico que su capacidad máxima.  
 
 **Herramientas**: JMeter, k6.  
+
+![Stress Test](../../x-assets/0488/stress-test1.png)
+![Stress Test](../../x-assets/0488/stress-test2.png)
+
 
 ## 9. Pruebas de regresión (Regression Tests)
 **Qué son**: Se ejecutan después de cambios en el código para verificar que no se hayan introducido errores nuevos.  
