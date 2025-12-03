@@ -64,7 +64,82 @@ mensaje()
 if __name__ == '__main__':
   llamar_funcion()
 
-  
+# Más sobre if __name__ == '__main__
+# https://www.youtube.com/watch?v=KZpYtNtGxSU
+
+
+# ACTIVIDADES
+# ACTIVIDAD Área
+"""
+Crear una función calcular_area(lado, ancho) que:
+Reciba dos números (lado y ancho).
+Devuelva el área calculada (lado × ancho).
+
+Ahora, ejecutar la funcion en un programa. El programa deberia funcionar asi:
+Si los valores son lado = 5 y ancho = 3, el programa debe mostrar:
+'El área es 15 cm²'
+"""
+
+
+"""
+ACTIVIDAD Área
+Crear una función calcular_area(lado, ancho) que:
+Reciba dos números (lado y ancho).
+Devuelva el área calculada (lado × ancho).
+
+Ahora, ejecutar la funcion en un programa. El programa deberia funcionar asi:
+Si los valores son lado = 5 y ancho = 3, el programa debe mostrar:
+'El área es 15 cm²'
+"""
+
+"""
+# ACTIVIDAD Kaixo
+Crear un procedimiento. Fijáte que no devuelve nada.
+
+repetir_kaixo(contar)
+
+Al ejecutar el programa repetir_kaixo(3), el programa debe mostrar:
+'Kaixo'
+'Kaixo'
+'Kaixo'
+
+"""
+
+
+"""
+ACTIVIDAD Coche
+Crear una funcion para calcular los costes de un coche.
+
+calcular_coste(motores, carroceria, pintura) => float de precio final
+
+Use precios fijos inventados para cada elemento:
+- Motor: 3.200 €
+- Carrocería (módulos): 4.500 €
+- Pintura por litro: 35 €
+
+Al ejecutar el programa, debe preguntar al usuario por el numero de motores, 
+la cantidad de carroceria y la cantidad de pintura necesario.
+
+
+"""
+
+
+"""
+ACTIVIDAD Masa Corporal
+
+Crea un programa en Python que calcule el BMI (Índice de Masa Corporal) de una persona y determine su categoría.
+
+BMI=peso / altura ** 2
+
+Determine la categoría correspondiente:
+
+- BMI < 18.5 → Bajo peso
+- 18.5 - 24.9 → Normal
+- 25 - 29.9 → Sobrepeso
+- 30 o más → Obesidad
+
+"""
+
 # RESPUESTAS
 # Actividad: Repetir x veces
 
@@ -116,8 +191,36 @@ if __name__ == "__main__":
   
   
   
-  
-  
+# ------------------------ 
+# Parameters por defecto (default)
+
+def greet(name, greeting="Hello"):
+    print(f"{greeting}, {name}!")
+
+# Call with both parameters
+greet("Alice", "Hi")    # Output: Hi, Alice!
+
+# Call with only the required parameter
+greet("Bob")  
+
+# Call with parameter names
+greet(name="Charlie", greeting="Hey")  # Output: Hey, Charlie
+
+
+# Usar *args
+def sum_numbers(*numbers):
+    """Return the sum of any number of numbers."""
+    total = sum(numbers)
+    print(f"Adding numbers: {numbers}")
+    return total
+
+# Call with different numbers of arguments
+print(sum_numbers(1, 2, 3))      # Output: Adding numbers: (1, 2, 3) → 6
+print(sum_numbers(5, 10))        # Output: Adding numbers: (5, 10) → 15
+print(sum_numbers())              # Output: Adding numbers: () → 0
+
+# ------------------------
+
  # DEMO - pass by reference, value, object
 # metodo - Pass-by-Object
 # pasando INMUTABLE objetos - call by value
@@ -234,3 +337,30 @@ def encontrarPalabra(texto):
 print(encontrarPalabra(texto))
 
 
+# Función que calcula el BMI y devuelve dos valores
+def calcular_bmi(peso, altura):
+    bmi = peso / (altura ** 2)
+
+    if bmi < 18.5:
+        categoria = "Bajo peso"
+    elif bmi < 25:
+        categoria = "Normal"
+    elif bmi < 30:
+        categoria = "Sobrepeso"
+    else:
+        categoria = "Obesidad"
+
+    return bmi, categoria
+
+
+# Programa principal
+if __name__ == "__main__":
+    print("=== Cálculo del BMI ===")
+
+    peso = float(input("Introduce tu peso en kg: "))
+    altura = float(input("Introduce tu altura en metros: "))
+
+    bmi, categoria = calcular_bmi(peso, altura)
+
+    print(f"\nTu BMI es: {bmi:.2f}")
+    print(f"Clasificación: {categoria}")
