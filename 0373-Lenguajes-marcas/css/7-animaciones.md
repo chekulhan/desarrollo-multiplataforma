@@ -115,7 +115,11 @@ transform: skew(20deg, 10deg); /* Inclina 20 grados en el eje X y 10 grados en e
 ```
 
 5. Combinar Transformaciones
-Puedes combinar múltiples funciones de transformación en una sola propiedad transform:
+Puedes combinar múltiples funciones de transformación en una sola propiedad
+
+https://www.youtube.com/watch?v=ZSQuEAVEHGs
+
+transform:
 
 ```css
 transform: translate(50px, 100px) rotate(45deg) scale(1.5);
