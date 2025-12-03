@@ -25,7 +25,7 @@ Ejemplo:
   from { transform: translateX(0); }  /* Start here */
   to { transform: translateX(100px); } /* End here */
 }
-```css
+```
 
 ## Propiedades de Animación
 Para usar una animación en un elemento, necesitas agregar algunas propiedades. Aquí están las principales:
@@ -180,4 +180,70 @@ transform: translate(50px, 100px) rotate(45deg) scale(1.5);
     }
 
 </style>
+```
+
+
+
+# Demo de Sun Rise
+```html
+<style>
+  body {
+            background: skyblue;
+        }
+        .sun {
+            background-color: yellow;
+            border-radius: 100%;
+            height:100px;
+            width:100px;
+            position: relative;
+            animation: sunRise 5s ;
+        }
+
+        @keyframes sunRise {
+            from {
+                
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(2) translateY(-200px);
+            }
+        }
+
+        .horizon {
+            border-top: 1px solid black;
+            margin: 150px 0; 
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="horizon"></div>
+    <div class="sun"></div>
+```html
+
+Sun Cycle
+```css
+
+
+@keyframes sunCycle {
+    0% {
+      bottom: -50px;
+      transform: scale(1);
+    }
+    40% {
+      bottom: 150px;   /* sun rises */
+      transform: scale(1.5);
+    }
+    60% {
+      bottom: 150px;   /* sun pauses at top */
+      transform: scale(1.5);
+    }
+    100% {
+      bottom: -50px;   /* sun sets */
+      transform: scale(1);
+    }
+  }
+
 ```
