@@ -221,6 +221,60 @@ print(sum_numbers())              # Output: Adding numbers: () → 0
 
 # ------------------------
 
+# ACTIVIDADES con parámetros opcionales y *args
+"""
+
+Actividad 1:
+Escribe una función en Python llamada calcular_cuenta que reciba el valor de una cuenta de restaurante y 
+calcule el total añadiendo una propina.
+La propina debe ser un parámetro opcional, que por defecto sea 10%.
+
+
+Actividad 2:
+Crea una función llamada crear_playlist que reciba cualquier cantidad de títulos de canciones.
+Usar *args, y devuelva un texto formateado con la playlist.
+
+Por ejemplo:
+"Tu playlist tiene las siguientes canciones: canción1, canción2, canción3..."
+
+Y si no se pasa ninguna canción, debe devolver:
+"No añadiste ninguna canción a la playlist."
+
+
+crear_playlist("canción1", "canción2", "canción3")
+
+
+Actividad 3: 
+Usando *args, aceptar tareas, como "limpiar el coche", "hacer las deberes", "estudiar para un examen".
+
+Debes clasificarla en una de estas categorías:
+"Alta prioridad" si incluye palabras como: "examen", "urgente", "hoy", "entrega".
+"Media prioridad" si incluye: "mañana", "revisar", "email".
+"Baja prioridad" para todo lo demás.
+
+
+Por ejemplo:
+clasificar_tareas(
+    "Estudiar para el examen de programación",
+    "Revisar apuntes",
+    "Ordenar el escritorio",
+    "Entregar el trabajo hoy",
+    Responder email del profesor
+)
+
+Y la respuesta seria algo asi:
+Tareas clasificadas:
+- Alta prioridad:
+  * Estudiar para el examen de matemáticas
+- Media prioridad:
+  * Revisar apuntes de la clase
+  * Responder email del profesor
+
+"""
+
+
+
+
  # DEMO - pass by reference, value, object
 # metodo - Pass-by-Object
 # pasando INMUTABLE objetos - call by value
