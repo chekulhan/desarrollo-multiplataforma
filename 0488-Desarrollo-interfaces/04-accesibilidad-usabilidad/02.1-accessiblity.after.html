@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic HTML Page</title>
+</head>
+
+<style>
+    .btn {
+        padding: 10px 20px; 
+        background-color: red; 
+        color: white; 
+        display: inline-block; 
+        cursor: pointer; 
+        user-select: none;
+    }
+
+</style>
+<body>
+
+<main>
+  <h1>My Web Page</h1>
+
+  <p>Welcome to my website. Please fill out the form below:</p>
+
+  <form aria-label="contact form">
+    <fieldset>
+        <legend>Contact Information</legend>
+     <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your name">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Email">
+
+      <div class="btn" role="button" aria-label="Submit the button" tabindex="0"
+        onclick="alert('Form submitted!')"
+        onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+        Submit
+     </div>
+    </fieldset>
+  </form>
+
+  </main>
+
+
+  <nav role="navigation" aria-label="Main Navigation">
+    <ul>
+      <li><a href="#home" aria-label="Home page">Home</a></li>
+      <li><a href="#about" aria-label="About">About</a></li>
+      <li><a href="#contact" aria-label="Contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <img src="example.jpg" alt="This is an image">
+
+
+
+
+</body>
+</html>
+

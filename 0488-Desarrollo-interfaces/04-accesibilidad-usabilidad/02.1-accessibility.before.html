@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Basic HTML Page</title>
+
+      
+  <style>
+      .btn {
+          padding: 10px 20px; 
+          background-color: red; 
+          color: white; 
+          display: inline-block; 
+          cursor: pointer; 
+          user-select: none;
+      }
+
+  </style>
+
+</head>
+
+<body>
+
+  <h1>My Web Page</h1>
+
+  <p>Welcome to my website. Please fill out the form below:</p>
+
+  <form>
+    <input type="text" placeholder="Your name">
+    <input type="email" placeholder="Email">
+    <div class="btn" 
+        onclick="alert('Form submitted!')"
+        onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+        Submit
+     </div>
+  </form>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <img src="example.jpg" alt="">
+
+
+  <!--
+    Contrast
+  -->
+    <p style="color: #888888; background-color: #ffffff; padding: 10px;">
+    This is bad contrast text.
+    </p>
+
+</body>
+</html>
+

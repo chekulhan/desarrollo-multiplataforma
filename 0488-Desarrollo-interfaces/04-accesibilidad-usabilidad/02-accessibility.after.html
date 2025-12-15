@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!--
+  SOLUCIÓN 1:
+  Idioma del documento correctamente definido.
+  WCAG 3.1.1 – Idioma de la página
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo WCAG – Después</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .mensaje {
+      margin-top: 20px;
+      color: green;
+    }
+
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Ejemplo de accesibilidad (DESPUÉS)</h1>
+
+  <!-- SOLUCIÓN 2:
+       Texto alternativo significativo.
+       WCAG 1.1.1 – Contenido no textual
+  -->
+  <img
+    src="grafico.png"
+    alt="Gráfico de barras que muestra las ventas mensuales"
+  >
+
+  <!-- SOLUCIÓN 3:
+       Contraste suficiente (≥ 4.5:1).
+       WCAG 1.4.3 – Contraste (mínimo)
+  -->
+  <p style="color:#1a1a1a;">
+    Este texto tiene un contraste adecuado.
+  </p>
+
+  <!-- SOLUCIÓN 4:
+       Lenguaje claro y sencillo (nivel secundaria).
+       WCAG 3.1.5 – Nivel de lectura
+  -->
+  <p>
+    Rellena el formulario con tus datos para poder enviarlo correctamente.
+  </p>
+
+  <!-- SOLUCIÓN 5 (MEJOR OPCIÓN):
+       Botón semántico sin necesidad de ARIA.
+       WCAG 2.1.1 – Teclado
+       WCAG 4.1.2 – Nombre, función, valor
+       
+  -->
+  <button type="button" onclick="alert('Guardado')">
+    Guardar
+  </button>
+
+  <!-- SOLUCIÓN 6 (CASO AVANZADO):
+       Div como botón con ARIA completa.
+       WCAG 2.1.1 – Teclado
+       WCAG 4.1.2 – Nombre, función, valor
+  -->
+  <div
+    role="button"
+    tabindex="0"
+    aria-label="Enviar formulario"
+    onclick="alert('Enviar')"
+    onkeydown="if(event.key === 'Enter' || event.key === ' ') alert('Enviar')"
+  >
+    Enviar
+  </div>
+
+  <!-- TIP PARA ESTUDIANTES:
+       ✔ HTML semántico primero
+       ❌ ARIA solo cuando sea estrictamente necesario
+  -->
+
+  <!-- SOLUCIÓN 7:
+       Label visible correctamente asociado.
+       WCAG 1.3.1 – Información y relaciones
+       WCAG 3.3.2 – Etiquetas o instrucciones
+  -->
+  <label for="nombre">Nombre completo:</label>
+  <input id="nombre" type="text" aria-describedby="error-nombre">
+
+  <!-- SOLUCIÓN 8:
+       Error identificado y asociado al campo.
+       WCAG 3.3.1 – Identificación de errores
+  -->
+  <p id="error-nombre" class="error">
+    Este campo es obligatorio.
+  </p>
+
+  <!-- SOLUCIÓN 9:
+       Mensaje dinámico anunciado con aria-live.
+       WCAG 4.1.3 – Mensajes de estado
+  -->
+  <div class="mensaje" aria-live="polite">
+    Datos guardados correctamente
+  </div>
+
+  <!-- SOLUCIÓN 10:
+       Orden lógico del foco.
+       WCAG 2.4.3 – Orden del foco
+  -->
+  <button>Acción principal</button>
+  <a href="#final">Ir al final</a>
+
+  <!-- SOLUCIÓN 11:
+       Enlace con propósito claro.
+       WCAG 2.4.4 – Propósito del enlace
+  -->
+  <a href="detalles.html">
+    Ver detalles del producto
+  </a>
+
+</body>
+</html>

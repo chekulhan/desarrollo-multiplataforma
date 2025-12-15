@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!--
+  PROBLEMA 1: Cual es el idioma de la página
+  WCAG 3.1.1 – Idioma de la página
+-->
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Ejemplo WCAG – Antes</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+
+    .bajo-contraste {
+      color: #cfcfcf;
+      background-color: #ffffff;
+    }
+
+    .boton-falso {
+      background-color: green;
+      color: white;
+      padding: 10px;
+      width: 140px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .mensaje {
+      margin-top: 20px;
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Ejemplo de accesibilidad (ANTES)</h1>
+
+  <!-- PROBLEMA 2:
+       WCAG 1.1.1 – Contenido no textual
+  -->
+  <img src="grafico.png">
+
+  <!-- PROBLEMA 3:
+       WCAG ________ – _______________
+  -->
+  <p class="bajo-contraste">
+    Este texto tiene muy poco contraste.
+  </p>
+
+  <!-- PROBLEMA 4:
+       Lenguaje innecesariamente complejo.
+       WCAG 3.1.5 – Nivel de lectura
+  -->
+  <p>
+    El usuario deberá proceder a la cumplimentación exhaustiva del formulario
+    con el objetivo de facilitar la posterior validación de los datos.
+  </p>
+
+  <!-- PROBLEMA 5:
+       Div actuando como botón sin teclado ni rol.
+       WCAG 2.1.1 – Teclado
+       WCAG 4.1.2 – Nombre, función, valor
+  -->
+  <div class="boton-falso" onclick="alert('Guardado')">
+    Guardar
+  </div>
+
+  <!-- PROBLEMA 6:
+       
+       WCAG 4.1.2 – Nombre, función, valor
+  -->
+  <div role="button" onclick="alert('Enviar')">
+    Enviar
+  </div>
+
+  <!-- PROBLEMA 7:
+       Campo sin label visible.
+       aria-label no debería ser la primera opción.
+       WCAG 1.3.1 – Información y relaciones
+       WCAG 3.3.2 – Etiquetas o instrucciones
+  -->
+  <input type="text" aria-label="Nombre completo">
+
+  <!-- PROBLEMA 8:
+       Error de formulario no identificado ni asociado. Se usa el input type text de problema 7 para este problema. 
+       WCAG 3.3.1 – Identificación de errores
+  -->
+  <p style="color:red;">El campo es obligatorio</p>
+
+  <!-- PROBLEMA 9:
+       Contenido dinámico sin avisar a lectores de pantalla.
+       WCAG 4.1.3 – Mensajes de estado
+  -->
+  <div class="mensaje">
+    Datos guardados correctamente
+  </div>
+
+  <!-- PROBLEMA 10:
+       Orden del foco visual no lógico.
+       WCAG 2.4.3 – Orden del foco
+  -->
+  <a href="#final">Ir al final</a>
+  <button>Acción principal</button>
+
+  <!-- PROBLEMA 11:
+       Texto de enlace no descriptivo.
+       WCAG 2.4.4 – Propósito del enlace
+  -->
+  <a href="detalles.html">Haz clic aquí</a>
+
+</body>
+</html>
