@@ -1,3 +1,7 @@
+# Ayuda
+
+[Java Contenido](https://maycolmo.github.io/pe/java.pdf)
+
 # Instalacion
 Son implementaciones de Open JDK (no hay diferencias en el código, sino en las licencias - Corretto is free para production)
 - https://jdk.java.net/
