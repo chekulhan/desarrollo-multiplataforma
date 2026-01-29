@@ -1,3 +1,81 @@
+# Comandos útiles de Linux para desarrolladores 
+
+## Manejo de carpetas
+```bash
+ls
+ls -l
+cd
+cd ..
+cd /
+```
+
+## Archivos
+```bash
+touch abc.txt
+cat abc.txt
+echo "Hello" > abc.txt
+echo "Hello" >> abc.txt
+cat > xyz.txt
+
+cp abc.txt xyz.txt
+cp abc.txt /tmp/
+
+mv old_name.txt new_name.txt  # renombrar
+rm file_to_delete.txt
+```
+
+
+
+## Buscadores
+
+Encuentra archivos por nombre o propiedad:
+
+```bash
+find . -name "a*.txt"
+find . -iname a*.txt     # case insensitive
+
+find . -type f -name "abc.txt"     # archivo
+find . -type d -name "content"     # carpeta
+```
+
+
+Dentro de un archivo:
+```bash
+grep "hello" xyz.txt
+grep -i  "Hello" xyz.txt
+grep -rin "hello"     # recursivo y case insensitive y numero de linea
+```
+
+## Disk Free
+```bash
+df
+df -h
+```
+
+## Process Status
+```bash
+ps aux
+```
+
+a = show processes for all users
+u = show user-oriented format (more details)
+x = include processes without a terminal
+
+Crear un proceso y luego matarlo:
+
+```bash
+sleep 300 &   # corriendo en el fondo
+ps aux
+kill pid
+```
+
+## Combinando los comandos
+```bash
+ps aux | grep sleep
+```
+
+
+
 # Comandos útiles de Linux para trabajar con datos
 
 ## 1️⃣ Core Unix tools (work everywhere)
