@@ -65,3 +65,10 @@ public class HelloWorld2 {
 
   
 }
+
+
+// Actividades sencillas de Java, para coger 'feeling'
+// 1. Imprimir 'child' si tiene 13 años o menos, 'teenager' si tiene < 20 y adulto para los demás casos'
+// 2. Con un String 'hello', imprimelo al reves => `olleh'
+// 3. Imprimir los números 20 a 30 con un bucle for y despúes con un while
+// 4. Constriur un menu para opciones 1, 2 y 3 usando un switch/case

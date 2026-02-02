@@ -23,6 +23,31 @@
 | Interfaces | `Runnable r = new Thread();` | Blueprint for classes             |
 
 
+```java
+int a = 5;
+int b = 5;
+
+if (a == b) {
+    System.out.println("a and b are equal!");
+}
+```
+
+```java
+String name1 = "Jon";
+String name2 = "Jon";
+String name3 = new String("Jon");
+
+System.out.println(name1 == name2);      // true — same literal in memory
+System.out.println(name1 == name3);      // false — different objects
+System.out.println(name1.equals(name3)); // true — content is the same
+```
+| Use case                              | What to use                                      |
+|--------------------------------------|-------------------------------------------------|
+| Primitives (`int`, `double`, `boolean`) | `==`                                           |
+| Strings                               | `.equals()`                                     |
+| Other objects (custom classes)        | `.equals()` (override for content equality if needed) |
+
+
 
 # Actividad: “Informe del tiempo”
 
