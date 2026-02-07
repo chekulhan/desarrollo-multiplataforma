@@ -54,3 +54,30 @@ while (i <= 5) {
 }
 
 ```
+
+
+# Actividades de repaso
+## Actividad 1
+```java
+String[] nombres = {"Ana", "Luis", "Carlos", "Marta"};
+```
+Mostrar cada nombre, en mayúscula, usando un bucle for (each)
+
+## Actividad 2
+Usando un while, hacer un bucle para contar de 10 hasta 0, y después mostrar '¡Despegue!'
+
+```java
+System.out.println("Faltan " + i + " segundos");
+```
+
+
+¿Podrias mejorarlo con un Thread.sleep(1000); ?
+```java
+try {
+    Thread.sleep(1000); // pausa 1 segundo
+} catch (InterruptedException e) {
+    e.printStackTrace();
+}
+```
+
+
