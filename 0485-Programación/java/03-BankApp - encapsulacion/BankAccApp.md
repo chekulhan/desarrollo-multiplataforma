@@ -12,6 +12,7 @@ La encapsulación ayuda a que el código sea más seguro, robusto y fácil de ma
 Aqui tenemos un ejemplo de NO utilizar encapsulación:
 
 Problema: cualquier código puede modificar balance de manera incorrecta, poniendo datos inválidos como balances negativos.
+
 ```java
 class BankAcc {
   public int balance;
