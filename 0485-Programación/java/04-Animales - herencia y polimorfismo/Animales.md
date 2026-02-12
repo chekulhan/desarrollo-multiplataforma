@@ -105,12 +105,19 @@ public class AnimalApp {
 
 ## Actividad
 
-Tocas en un grupo de música. Hay una guitarista, un bajo y piano. 
+Estás creando un programa para simular una banda de música. La banda tiene varios instrumentos: guitarra eléctrica, bajo y piano.
 
-¿Pensar como seria la herencia? 
+Piensa cómo modelar la herencia entre los instrumentos.
 
-Al final, agregar todos los instrumentos a una ArrayList<Instrumentos> para que puedan tocar todos...
+Todos los instrumentos comparten algunas propiedades y comportamientos (por ejemplo, nombre y tocar()), pero cada tipo de instrumento tiene su propia manera de tocar.
 
+Crea una clase base Instrumento y extiéndela para cada tipo de instrumento (GuitarraElectrica, Bajo, Piano).
+
+Finalmente, agrega todos los instrumentos a un ArrayList para que la banda pueda tocar todos los instrumentos y mostrar qué está tocando cada uno.
+
+Más funcionalidad: Las cuerdas de las guitarras suelen romper; La guitarra eléctrica tiene distorsion, y cuando tocas con la distorsion puesta, es muy, pero muy ALTOOOOOOOOO!
+
+Avanzado: El grupo (banda) contiene un ArrayList de Instrumentos.
 
 
 ### Respuesta
@@ -183,4 +190,93 @@ public class BandaApp {
         }
     }
 }
+```
+
+
+Solucion Avanzado
+
+```java
+import java.util.ArrayList;
+import java.util.List;
+
+class Band {
+    private List<Instrumento> instrumentos;
+
+    public Band() {
+        instrumentos = new ArrayList<>();
+    }
+
+    public void addInstrumento(Instrumento i) {
+        instrumentos.add(i);
+    }
+
+    // This simulates playing all instruments together
+    public void tocarTodos() {
+        System.out.println("La banda está tocando:");
+        for (Instrumento i : instrumentos) {
+            System.out.println(i.marca + " " + i.nombre + ": " + i.tocar());
+        }
+    }
+}
+
+// --- Instrument classes (same as before) ---
+class Instrumento {
+    protected String nombre;
+    protected String marca;
+
+    public Instrumento(String nombre, String marca) {
+        this.nombre = nombre;
+        this.marca = marca;
+    }
+
+    public String tocar() {
+        return "Instrumento sonando...";
+    }
+}
+
+class GuitarraElectrica extends Instrumento {
+    public GuitarraElectrica(String marca) {
+        super("Guitarra Eléctrica", marca);
+    }
+
+    @Override
+    public String tocar() {
+        return "Tocando riffs de guitarra eléctrica";
+    }
+}
+
+class Bajo extends Instrumento {
+    public Bajo(String marca) {
+        super("Bajo", marca);
+    }
+
+    @Override
+    public String tocar() {
+        return "Tocando líneas de bajo";
+    }
+}
+
+class Piano extends Instrumento {
+    public Piano(String marca) {
+        super("Piano", marca);
+    }
+
+    @Override
+    public String tocar() {
+        return "Tocando melodías en el piano";
+    }
+}
+
+// --- Main ---
+public class BandaApp {
+    public static void main(String[] args) {
+        Band banda = new Band();
+        banda.addInstrumento(new GuitarraElectrica("Fender"));
+        banda.addInstrumento(new Bajo("Ibanez"));
+        banda.addInstrumento(new Piano("Yamaha"));
+
+        banda.tocarTodos();
+    }
+}
+
 ```
