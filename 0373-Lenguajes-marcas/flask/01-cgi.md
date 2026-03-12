@@ -21,6 +21,17 @@ En lugar de servir solo archivos estáticos (HTML, imágenes), CGI permite que u
 
 - Hoy en día se usa más como concepto histórico, mientras que frameworks modernos (Flask, Django, Node.js, Rails) manejan servidores persistentes y rutas dinámicas más eficientes.
 
+## Perl
+
+Perl es un lenguaje de programación de alto nivel, interpretado y multipropósito, diseñado originalmente para procesamiento de texto y automatización de tareas.
+
+- Creado por Larry Wall en 1987.
+- Inicialmente pensado como herramienta de reportes y administración de sistemas.
+- Popular en los 90 por desarrollo web con CGI, automatización de tareas y procesamiento de texto.
+
+## Actividad 
+Vamos a programar, de forma sencillo, un CGI servidor, y ver como las peticiones al servidor devuelve datos dinámicos
+
 ```bash
 apt-get update
 apt-get install -y libcgi-pm-perl
@@ -79,4 +90,4 @@ Y si ejecutas el servidor de HTTP sin cgi, ¿qué ocurre?
 ```
 
 
-![CGI](../../../x-assets/0485/cgi.png)
+![CGI](../../x-assets/0373/cgi.png)
