@@ -38,8 +38,24 @@ apt-get install -y libcgi-pm-perl
 ```
 
 
-Crear la carpeta y archivo home.cgi:  /cgi-bin/home.cgi
+En Linux, a veces se complica copiando de un sistema de Windows a Linux. Asi, vamos a usar **nano** para copiar, pegar (editar) el código:
+```bash
+sudo apt-get nano
+```
 
+Crear la carpeta cgi-bin y entrar:
+```bash
+mkdir cgi-bin
+cd cgi-bin
+```
+
+Crear el archivo con nano:
+
+```bash
+nano home.cgi
+```
+
+Copiar y pegar este código dentro del archivo de home.cgi con Nano:
 ```perl
 #!/usr/bin/perl
 use strict;
@@ -61,6 +77,8 @@ my $time = localtime();
 print "Hello, $name!\n";
 print "The current server time is $time\n";
 ```
+Guardar.
+
 
 Modificar sus permisos para que sean ejecutable. 
 OJO: el archivo esta en la carpeta cgi-bin
