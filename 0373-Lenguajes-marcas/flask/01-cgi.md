@@ -40,7 +40,7 @@ apt-get install -y libcgi-pm-perl
 
 En Linux, a veces se complica copiando de un sistema de Windows a Linux. Asi, vamos a usar **nano** para copiar, pegar (editar) el código:
 ```bash
-sudo apt-get nano
+sudo apt-get install nano
 ```
 
 Crear la carpeta cgi-bin y entrar:
@@ -100,6 +100,13 @@ Y en un Terminal, llamar al servidor con un curl:
 curl  "http://127.0.0.1:8001/cgi-bin/home.cgi?name=Alice"
 ```
 
+Si tienes algun problema con el archivo de texto, ejecutar este comando para eliminar cualquier diferencia de Windows a Linux
+
+```bash
+sed -i 's/\r$//' home.cgi
+```
+
+
 
 Y si ejecutas el servidor de HTTP sin cgi, ¿qué ocurre?
 
@@ -109,3 +116,34 @@ Y si ejecutas el servidor de HTTP sin cgi, ¿qué ocurre?
 
 
 ![CGI](../../x-assets/0373/cgi.png)
+
+
+Modificar el home.cgi para mostrar HTML
+```perl
+#!/usr/bin/perl
+use strict;
+use warnings;
+use CGI;
+
+# Create CGI object
+my $cgi = CGI->new;
+
+# Send HTTP header
+print $cgi->header('text/html');  # html output
+
+# Get a query parameter (dynamic input)
+my $name = $cgi->param('name') || 'Guest';
+
+# Generate dynamic content
+my $time = localtime();
+
+print "<html>";
+print "<head><title>Perl CGI Test</title></head>";
+print "<body>";
+
+print "<h1>Hello, $name!</h1>";
+print "<p>The current server time is <b>$time</b></p>";
+
+print "</body>";
+print "</html>";
+```
