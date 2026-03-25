@@ -1,72 +1,36 @@
-# Transformers con Hugging Face
+
+# Hugging Face
+
+Hugging Face pasó de ser una simple app de chatbot (2016) a convertirse en una de las principales plataformas de IA del mundo gracias a apostar por el open source.
+
+2018–2019 → Cambian de dirección
+👉 Deciden centrarse en inteligencia artificial y procesamiento de lenguaje natural (NLP)
+👉 Lanzan la librería Transformers
+
+2020 en adelante → Crecimiento muy rápido
+👉 Se convierte en una plataforma clave para compartir modelos de IA
+👉 Nace el concepto de “GitHub de los modelos”
+👉 Empresas grandes empiezan a usarla
+
+**Herramientas comunes**
+1. Transformers (pipeline) – Uso local
+
+Es parte de la librería de Hugging Face Transformers
+Se ejecuta en tu propio código (Python)
+Descargas el modelo y lo ejecutas en tu máquina o servidor
+
+2. Inference API – Uso remoto
+
+Servicio en la nube de Hugging Face
+Haces una petición HTTP (API) o a través del cliente y ellos ejecutan el modelo
+
+
+## Transformers (Pipeline)
 
 https://huggingface.co/facebook/bart-large-cnn
 
-TO improve later
 
-
-Input preprocessing
-a) Tokenization
-The text "Artificial Intelligence is amazing." is split into tokens (words or subwords).
-
-Example: "Artificial Intelligence" → ["Art", "##ificial", "Intelligence"] (depends on the tokenizer)
-
-Each token is converted into a number (token ID) that the model can understand.
-
-Example: [1234, 5678, 90, 11]
-
-b) Special tokens and attention masks
-Transformers need start/end tokens and attention masks:
-
-[CLS] or [BOS] → marks the start
-
-[EOS] → marks the end
-
-Attention mask → tells the model which tokens are actual text vs padding
-
-2️⃣ Passing tokens through the model
-The model is a neural network with layers of transformers.
-
-Each token vector passes through:
-
-Embedding layer → turns token IDs into dense vectors
-
-Attention layers → each token “looks at” all other tokens to understand context
-
-Feedforward layers → processes each token’s information
-
-Output layer → predicts next token probabilities (or summary tokens)
-
-For text2text-generation, it generates tokens one by one, sometimes using strategies like beam search or greedy decoding.
-
-3️⃣ Output decoding
-The model outputs a sequence of token IDs.
-
-The pipeline automatically converts these IDs back to human-readable text.
-
-[432, 111, 55] → "AI is incredible."
-
-It handles removing special tokens like [BOS] or [EOS].
-
-4️⃣ Postprocessing
-The pipeline also applies:
-
-Truncation / padding to match model limits
-
-Optional filtering (like avoiding repeated words or bad tokens)
-
-Returning results in a consistent format (e.g., {'generated_text': "..."})
-
-✅ Summary of the pipeline steps
-Step	What happens	Who handles it?
-Input preprocessing	Text → tokens, special tokens, attention masks	Tokenizer
-Model forward pass	Token embeddings → attention → feedforward → logits	Transformer model
-Output decoding	Token IDs → human-readable text	Pipeline + tokenizer
-Postprocessing	Remove special tokens, format output	Pipelin
-
-
-
-![Window Builder ](../../../x-assets/0485/hg1.png)
+![Hugging Face ](../../../../desarrollo-multiplataforma/x-assets/0485/hf.png)
 
 Llevar a cabo usando **Colab**
 
@@ -115,3 +79,22 @@ print(f"Answer: '{result['answer']}', score: {round(result['score'], 4)}, start:
 ```
 
 
+# Inference API
+
+```python
+import os
+from huggingface_hub import InferenceClient
+from google.colab import userdata
+
+client = InferenceClient(
+    provider="hf-inference",
+    api_key=userdata.get('HF_TOKEN')
+)
+
+result = client.summarization(
+    "The tower is 324 metres (1,063 ft) tall, about the same height as an 81-storey building, and the tallest structure in Paris. Its base is square, measuring 125 metres (410 ft) on each side. During its construction, the Eiffel Tower surpassed the Washington Monument to become the tallest man-made structure in the world, a title it held for 41 years until the Chrysler Building in New York City was finished in 1930. It was the first structure to reach a height of 300 metres. Due to the addition of a broadcasting aerial at the top of the tower in 1957, it is now taller than the Chrysler Building by 5.2 metres (17 ft). Excluding transmitters, the Eiffel Tower is the second tallest free-standing structure in France after the Millau Viaduct.",
+    model="facebook/bart-large-cnn",
+)
+
+print(result)
+```
