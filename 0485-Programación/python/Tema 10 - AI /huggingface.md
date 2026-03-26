@@ -1,3 +1,47 @@
+# Inteligencia Artificial
+
+¿Qué es la inteligencia? Howard Gardner
+
+![MI](../../../x-assets/0485/Inteligencias-multiples.jpg)
+
+![Historia](../../../x-assets/0485/historia-ai.png)
+
+
+1943 - Propusieron Warren McCulloch y Walter Pitts un modelo matemática para simular los neurones del cerebro humano.
+
+1957 - The Perceptron: Frank Rosenblatt developed the Perceptron, the first neural network that could learn weights from input data.
+
+![Neuron](../../../x-assets/0485/neuron.png)
+
+![Neuron](../../../x-assets/0485/neuron.math.png)
+
+1950-60s
+- Alan Turing - “Can Machines Think?”
+- ELIZA - chatbot
+- John McCarthy acuñó el término “IA”, Dartmouth summer research project (1956)
+- Desarrollo de perceptrón - red neuronal
+- Lenguajes de programación Lisp
+
+1970’s - 1980’s
+- Sistemas de expertos - MYCIN - diagnosis de infecciones de sangre
+- Lenguajes de programación Prolog
+- Interés de nuevo en las redes neuronales
+- Progreso en robótica, el reconocimiento de voz de lenguajes y NLP (Procesamiento de Lenguaje Natural)
+
+1990’s
+- IBM Watson para competir y ganar el concurso Jeopardy!
+- Deep Blue de IBM derrota al campeón mundial Garry Kasparov en ajedrez
+
+2000’s >
+- Alexia, Siri, Google Maps, coches independientes
+- Big Data, la potencia de cálculo de ordenadores, la nube (infraestructura)
+- Lenguajes de programación - Py Torch, Tensor Flow
+
+IA Generativa:
+- 2017 - “Attention Is All You Need” de Google, architectura de Transformer
+- 2019 - GPT 3 de OpenAI
+
+
 
 # Hugging Face
 
