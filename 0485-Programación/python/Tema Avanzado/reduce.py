@@ -13,6 +13,13 @@ result = reduce(add, numbers)
 
 print(result)
 
+"""
+Step 1: x=1, y=2 → 3
+Step 2: x=3, y=3 → 6
+Step 3: x=6, y=4 → 10
+"""
+
+
 
 from functools import reduce
 
