@@ -36,3 +36,49 @@ reduce(lambda x, y: x + y, numbers)
 
 # preferred
 sum(numbers)
+
+
+# Actividades
+from functools import reduce
+
+numbers = [3, 7, 2, 9, 5]
+
+# encontrar el número más grande usando reduce
+"""
+3 vs 7 → 7
+7 vs 2 → 7
+7 vs 9 → 9
+9 vs 5 → 9
+"""
+
+cart = [
+    {"name": "apple", "price": 2, "qty": 3},
+    {"name": "banana", "price": 1, "qty": 5},
+    {"name": "orange", "price": 3, "qty": 2}
+]
+
+# resultado esperado:
+# apple: 2 * 3 = 6
+# banana: 1 * 5 = 5
+# orange: 3 * 2 = 6
+
+# total = 17
+
+
+
+# Respuestas
+from functools import reduce
+
+max_value = reduce(lambda acc, x: acc if acc > x else x, numbers)
+
+print(max_value)
+
+from functools import reduce
+
+total = reduce(
+    lambda acc, item: acc + (item["price"] * item["qty"]),
+    cart,
+    0
+)
+
+print(total)  # 17
